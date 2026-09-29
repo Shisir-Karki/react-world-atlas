@@ -4,6 +4,8 @@ export const ErrorPage = () => {
   const error = useRouteError();
   return (
     <>
+      <title>Error!</title>
+
       <h1>
         Oops! An error occured.
       </h1>

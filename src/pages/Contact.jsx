@@ -5,45 +5,49 @@ export const Contact = () => {
   };
 
   return (
-    <section className="section-contact">
-      <h2 className="container-title">
-        Contact Us
-      </h2>
+    <>
+      <title>Contact Us</title>
 
-      <div className="contact-wrapper container">
-        <form action={handleFormSubmit}>
-          <input 
-            type="text"
-            className="form-control"
-            required 
-            autoComplete="off" 
-            placeholder="Enter your name"
-            name="username"
-          />
+      <section className="section-contact">
+        <h2 className="container-title">
+          Contact Us
+        </h2>
 
-          <input 
-            type="email" 
-            className="form-control"
-            required 
-            autoComplete="off" 
-            placeholder="Enter your email"
-            name="username"
-          />
+        <div className="contact-wrapper container">
+          <form action={handleFormSubmit}>
+            <input 
+              type="text"
+              className="form-control"
+              required 
+              autoComplete="off" 
+              placeholder="Enter your name"
+              name="username"
+            />
 
-          <textarea
-            className="form-control"
-            rows="10"
-            required 
-            autoComplete="off" 
-            placeholder="Enter your message"
-            name="message"
-          />
+            <input 
+              type="email" 
+              className="form-control"
+              required 
+              autoComplete="off" 
+              placeholder="Enter your email"
+              name="username"
+            />
 
-          <button type="submit" value="send">
-            Send
-          </button>
-        </form>
-      </div>
-    </section>
+            <textarea
+              className="form-control"
+              rows="10"
+              required 
+              autoComplete="off" 
+              placeholder="Enter your message"
+              name="message"
+            />
+
+            <button type="submit" value="send">
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </>
   );
 };

@@ -42,23 +42,27 @@ export const Country = () => {
 
 
   return (
-    <section className="country-section">
+    <>
+      <title>Countries</title>
 
-      <SearchFilter 
-        search={search} 
-        setSearch={setSearch}
-        filter={filter}
-        setFilter={setFilter} 
-        countries={countries}
-        setCountries={setCountries}
-      />
-      <ul className="grid grid-four-cols">
-        {filterCountries.map((country, index) => {
-          return(
-            <CountryCard country={country} key={index} />
-          );
-        })}
-      </ul>
-    </section>
+      <section className="country-section">
+
+        <SearchFilter 
+          search={search} 
+          setSearch={setSearch}
+          filter={filter}
+          setFilter={setFilter} 
+          countries={countries}
+          setCountries={setCountries}
+        />
+        <ul className="grid grid-four-cols">
+          {filterCountries.map((country, index) => {
+            return(
+              <CountryCard country={country} key={index} />
+            );
+          })}
+        </ul>
+      </section>
+    </>
   );
 };
