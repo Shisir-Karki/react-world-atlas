@@ -55,7 +55,7 @@ export function CountryDetails() {
                 </p>
                 <p>
                   <span className="card-description"> Capital:</span>
-                  {country.capital}
+                  {country.capital || 'N/A'}
                 </p>
 
                 <p>
@@ -64,11 +64,14 @@ export function CountryDetails() {
                 </p>
                 <p>
                   <span className="card-description"> Currencies: </span>
-                  {country.currencies
+                  {country.currencies 
+                    ? country.currencies
                     .map((currency) => (
-                      currency.name
+                      currency.name 
                     ))
-                    .join(", ")}
+                    .join(", ")
+                    : 'N/A'
+                  }
                 </p>
                 <p>
                   <span className="card-description">Languages: </span>
