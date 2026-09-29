@@ -16,7 +16,7 @@ export const Contact = () => {
             type="text"
             className="form-control"
             required 
-            autoComplete="Off" 
+            autoComplete="off" 
             placeholder="Enter your name"
             name="username"
           />
@@ -25,7 +25,7 @@ export const Contact = () => {
             type="email" 
             className="form-control"
             required 
-            autoComplete="Off" 
+            autoComplete="off" 
             placeholder="Enter your email"
             name="username"
           />
@@ -34,7 +34,7 @@ export const Contact = () => {
             className="form-control"
             rows="10"
             required 
-            autoComplete="Off" 
+            autoComplete="off" 
             placeholder="Enter your message"
             name="message"
           />
